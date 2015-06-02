@@ -17,21 +17,26 @@ class Calculo {
     public Calculo() {
     }
 
+   public Calculo(int numero1, int numero2) {
+        this.numero1 = numero1;
+        this.numero2 = numero2;
+    }
+
     //setters
-    public void setNumero1(int numero) {
-        this.numero1 = numero;
+    public void setNumero1(int valorIntrod1) {
+        this.numero1 = valorIntrod1;
         //si el número es negativo cambiamos a cero y
         //establecemos la propiedad "mensajeResultado" a "Error"
-        if (numero < 0) {
+        if (valorIntrod1 < 0) {
             mensajeResultado = "Error, los números no pueden ser negativos";
         }
     }
 
-    public void setNumero2(int numero) {
-        this.numero2 = numero;
+    public void setNumero2(int valorIntrod2) {
+        this.numero2 = valorIntrod2;
         //si el número es negativo cambiamos a cero y
         //establecemos la propiedad "mensajeResultado" a "Error"
-        if (numero < 0) {
+        if (valorIntrod2 < 0) {
             mensajeResultado = "Error, los números no pueden ser negativos";
         }
     }
